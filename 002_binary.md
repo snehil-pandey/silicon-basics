@@ -85,4 +85,40 @@ Example:
 
 More samples = better quality
 
-~ for today this much only next time video, general files, etc ~
+# How video is stored?
+Video = Images (frames) + audio  
+So simple right  
+A 30 fps video means:
+- 30 images every second
+- plus audio stream
+- plus compression (like MP4, H.264)
+
+# How general files are stored?
+Files are just sequences of bytes.  
+For example:
+**Text File:**  
+"Hi" => `01001000 01101001`  
+**An Image File:**  
+```yaml
+Header: info about image
+Pixel data: millions of RGB values
+```
+**A program:**  
+`<Binary instructions for CPU>`
+The computer doesn't know what the data means.  
+The **software interprets** it.
+
+# How does a computer know if something is a number, text or image?
+Through **formats and programs**.  
+- In a text editor, bytes &rarr; characters
+- In image viewer, bytes &rarr; pixels
+- In music player, bytes &rarr; audio samples
+  ... and so on.
+
+The data is the same (binary).  
+But the *software decides how to interpret it*.
+
+# Recap
+- Numbers, text, images, ... &rarr; Binary
+- Every thing on computer is binary
+- Binary = **universal language of computer**
