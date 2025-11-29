@@ -29,3 +29,36 @@ When CPU wants to add `5 + 3`:
 - Result goes into ACC
 
 Everything happens throught *register &rarr; ALU &rarr; registers*.  
+
+# ALU &mdash; The Calculator
+ALU &rarr; Arithmetic Logic Unit  
+It is the part which performs:  
+* **Arithmetic**
+  - addition
+  - subtraction
+  - multiplication (*via repeated add or hardware multiplier*)
+  - division (*via repeated subtract or dedicated unit*)
+* **Logic**
+  - AND
+  - OR
+  - NOT
+  - XOR
+  - Compare
+
+### How ALU adds numbers using binary?  
+Example: Add  
+`0101 (5) + 0011 (3)`  
+ALU does bit by bit addition:  
+```
+ 0101
++0011
+-----
+ 1000 => 8
+```
+Binary additon uses:  
+- Half adders
+- Full adders
+- Carry bits
+
+These are made of transistor acting as logic gates.
+
