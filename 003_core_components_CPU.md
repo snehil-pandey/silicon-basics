@@ -62,3 +62,16 @@ Binary additon uses:
 
 These are made of transistor acting as logic gates.
 
+# Control Unit &mdash; The Boss
+The Control Unit (*CU*) manages everything inside the CPU.  
+It performs a cycle called:  
+### Fetch &rarr; Decode &rarr; Execute
+### FETCH
+CU takes the next instruction from memory (RAM) using PC.
+### DECODE
+IT breaks the instructions into:  
+- operation (add, jump, load, store ...)
+- operands (numbers or memory addresses)
+### EXECUTE
+ALU performs the required action.
+This process happens *billions of time per second*.
