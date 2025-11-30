@@ -126,7 +126,7 @@ PC = next instruction address.
   - CU sets PC to a different address
   - CPU executes a different part of code
 
-* **COMPARE** &mdash; compares teo values & set [flags](https://en.wikipedia.org/wiki/FLAGS_register#:~:text=All%20FLAGS%20registers%20contain%20the%20condition%20codes%2C%20flag%20bits%20that%20let%20the%20results%20of%20one%20machine%2Dlanguage%20instruction%20affect%20another%20instruction)
+* **COMPARE** &mdash; compares teo values & set flags[<sup>\[1\]</sup>](https://en.wikipedia.org/wiki/FLAGS_register#:~:text=All%20FLAGS%20registers%20contain%20the%20condition%20codes%2C%20flag%20bits%20that%20let%20the%20results%20of%20one%20machine%2Dlanguage%20instruction%20affect%20another%20instruction "What are flags?")
   - Zero Flag
   - Carry Flag
   - Negative Flag  
