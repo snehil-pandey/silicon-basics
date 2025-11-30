@@ -151,4 +151,6 @@ Each step = multiple clock cycles.
 - You understand OS scheduling (if you read further about this)
 - You understand compiler optimizations
 - You become better at DSA, AI, system design
+
+
 ...there might be much more but I can think of this much only.
