@@ -26,4 +26,19 @@ All this is just bits, like:
 ```
 But after decoding CPU translates into an ALU operation.  
 
-~ Rest for tommorow cuz i'm busy with tests ~
+## Why instructions need a fixed struture?
+CPU needs to decode them fast every cycle. So formats are fixed, like:  
+- **R-Type**: operations on registers
+- **I-Type**: operations on immediate constants
+- **J-Type**: jumps
+
+Example R-Type format (*like RISC-V*):  
+```asm
+[opcode] [funct3] [rd] [rs1] [rs2] [funct7]
+```
+Each field has it's meaning:  
+- opcode &rarr; kind of operation
+- funct7/funct3 &rarr; sub-operation (*e.g. ADD vs SUB*)
+- rs1/rs2 &rarr; input register
+- rd &rarr; output register
+
