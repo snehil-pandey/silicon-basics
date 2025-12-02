@@ -42,3 +42,39 @@ Each field has it's meaning:
 - rs1/rs2 &rarr; input register
 - rd &rarr; output register
 
+# 3. How CPU actually executes the bits?
+Well if you remember seeing the procedure inside our 3<sup>rd</sup> module[<sup>\[1\]](https://github.com/snehil-pandey/silicon-basics/blob/main/003_core_components_CPU.md#:~:text=what%20actually%20happens%20inside%20the%20CPU "Steps involved in CPU").  
+*We skip the first and last step of the five CPU steps—it's just for physical repetition. The Control Unit runs Fetch, Decode, and Execute to guide code flow, while the ALU handles actual computations (with CU support).*  
+
+The three steps are:  
+**1. Fetch**
+- Instruction is loaded from RAM into CPU's instruction register.
+
+**2. Decode**  
+- Instruction are split into fields (opcode, operands)
+- Control signals are generated.
+ 
+**3. Execute**  
+- CPU runs the operation using ALU + registers.
+
+Example instruction:  
+```asm
+ADD R3, R1, R2
+```
+Execution steps:
+1. Fetch bits from memory.
+2. Decode: opcode = ADD, source = R1, R2, destination = R3
+3. ALU performs R1 + R2.
+4. Result stored in R3.  
+
+That's the entire cycle.  
+
+# A Quick Recap
+#### 1. What is the purpose of the opcode inside an instruction?  
+**Ans:** It tells the CPU what operation to perform (ADD, SUB, JUMP, etc)  
+#### 2. What are operands?
+**Ans:** These are the inputs the operation works on: registers, memory addresses or constants  
+#### 3. Why do instructions need a fixed binary structure?  
+**Ans:** CPU can decode and execute instruction in a single predictable cycle because it'll know where to look for opcode and operands  
+#### 4. What do you think ALU does when it recievs any operation?  
+**Ans:** It reads, computes and write to the destination.
