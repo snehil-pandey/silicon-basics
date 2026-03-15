@@ -100,4 +100,23 @@ Modern JS engine (V8, SpiderMonkey) do this:
 
 JS is also not puerly interpreted anymore.  
 
-~ few more stuffs for tomorrow ~
+# Journey of any code
+No matter what language you write in C, C++, Java, Python. Every thing eventually becomes **machine instruction**.   
+The CPU doen't understand c, C++, Java Code it only understand **Machine Instruction (Binary)**.  
+```mermaid
+flowchart TD
+    A[High Level Code] --> B[Compiler / Interpreter]
+    B --> C[Assembly / Bytecode]
+    C --> D[Machine Code]
+    D --> E[Executable / Runtime]
+    E --> F[Loaded into RAM]
+    F --> G[CPU Executes Instructions]
+```
+
+And the CPU executes them using the instruction cycle:  
+
+- Fetch
+- Decode
+- Execute  
+
+This process repeats billions of times per second.  
