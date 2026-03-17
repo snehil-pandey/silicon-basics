@@ -160,6 +160,13 @@ Decode instruction
 Execute -> ALU adds numbers
 ```
 
+Result:  
+```
+R3 = 8
+```
+
+This explains the **core mechanism of how computers execute programs**.
+
 ---
 
 # Big Picture
@@ -177,9 +184,3 @@ Code → Machine Code
        ↓
 Instruction Cycle
 ```
-Result:  
-```
-R3 = 8
-```
-
-This explains the **core mechanism of how computers execute programs**.
