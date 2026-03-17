@@ -160,6 +160,23 @@ Decode instruction
 Execute -> ALU adds numbers
 ```
 
+---
+
+# Big Picture
+
+```
+Computer Components
+       ↓
+Binary Representation
+       ↓
+CPU Components
+       ↓
+Instruction Structure
+       ↓
+Code → Machine Code
+       ↓
+Instruction Cycle
+```
 Result:  
 ```
 R3 = 8
